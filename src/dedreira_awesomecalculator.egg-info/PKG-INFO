@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dedreira-awesomecalculator
+Version: 1.0.0
+Summary: An awesome calculator package
+Home-page: https://github.com/dedreira/awesomecalculator
+Author: Daniel Edreira
+Author-email: dedreira@github.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Awesome Calculator
+This is a basic python package project to play around with GitHub Actions, you can check the repository [here](https://github.com/dedreira/awesomecalculator)
