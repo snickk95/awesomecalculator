@@ -2,14 +2,10 @@
 name: Get Artifact Installed
 
 on:
-  push:
-    branches:
-      - master
-      - main
-  pull_request:
-    branches:
-      - master
-      - main
+  workflow_row:
+    workflows: ["Awesome Calculator CI build"]
+    types:
+      - completed
 
 jobs:
   build:
