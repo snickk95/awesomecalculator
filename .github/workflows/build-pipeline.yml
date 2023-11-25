@@ -47,5 +47,12 @@ jobs:
       with:
         name: awesome-calculator
         path: src/dist    
+    - name: Build a WHL file
+    run: |
+      python stup.py sdist bdist_wheel
 
-
+    - name: Upload WHL Artifact
+      uses:  actions/upload-artifact@v2
+      with:
+        name: awesome-calculator
+        path: src/dist
