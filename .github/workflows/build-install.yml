@@ -2,29 +2,18 @@
 name: Get Artifact Installed
 
 on:
-  workflow_row:
+  workflow_run:
     workflows: ["Awesome Calculator CI build"]
     types:
       - completed
 
 jobs:
-  build:
+  install:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository with git actions
       uses: actions/checkout@v2
-
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.7
-
-    - name: Install Dependencies
-      cd src
-      python -m pip install --upgrade pip
-      pip install coverage
-      if  [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: Download Artifact
       uses: actions/download-artifact@v2
