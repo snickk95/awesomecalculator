@@ -15,6 +15,10 @@ jobs:
     - name: Checkout repository with git actions
       uses: actions/checkout@v2
 
+    - name: Display structure of downloaded files
+      run: ls -R
+      working-directory: src/dist
+
     - name: Download Artifact
       uses: actions/download-artifact@v2
       with:
