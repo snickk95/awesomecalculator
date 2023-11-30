@@ -100,5 +100,5 @@ jobs:
     - name: Install WHL File
       run: |
         mkdir install_dir
-        cp src/dist/awesome-calculator/dedreira_awesomecalculator-1.0.0-py3-none-any.whl install_dir/
+        cp src/dist/dedreira_awesomecalculator-1.0.0-py3-none-any.whl install_dir/
         pip install install_dir/dedreira_awesomecalculator-1.0.0-py3-none-any.whl
